@@ -1,0 +1,10 @@
+This text appears to be the output from an ipconfig or similar command-line tool on a Windows computer, specifically showing the connection details for the ProtonVPN virtual network adapter. This output is a perfect example of the "Connection status" and "IP address change" required for Task 8: Understanding VPNs.
+
+Here is a breakdown of what this output means in the context of your Cyber Security Internship task and how to interpret it for your report:
+
+📝 Analysis for Internship Report (Task 8)
+Detail	Value	Security Interpretation
+Adapter Name	Unknown adapter ProtonVPN	Confirms the use of the ProtonVPN client, fulfilling the task requirement of using a reputable VPN.
+IPv4 Address	10.2.0.2	This is your new, internal IP address assigned by the VPN server within its private network. This replaces your real public IP address when communicating with the outside world, fulfilling the "Check that your IP address has changed" requirement.
+Subnet Mask	255.255.255.255	A mask of all 1s (host-specific mask) is common for point-to-point VPN connections, ensuring the traffic only goes through the tunnel.
+Default Gateway	0.0.0.0	In many VPN protocols like OpenVPN, the VPN client itself handles the routing for the encrypted tunnel, which is why a typical gateway address is often set to 0.0.0.0 or is left blank. The traffic is securely routed through the VPN server.
